@@ -38,7 +38,7 @@ int main()
         printf("ON EACH TURN, YOU GUESS YES <'Y'> OR NO <'N'>.\n");
         printf("ONLY ONE IS CORRECT, AND THE PROGRAM HAS DECIDED\n");
         printf("WHICH ONE, BEFORE YOU MAKE YOUR GUESS. AT FIRST\n");
-        printf("YOUR ODDS ARE 50%, PURE CHANCE. BUT LATER THE\n");
+        printf("YOUR ODDS ARE 50%%, PURE CHANCE. BUT LATER THE\n");
         printf("PROGRAM WILL TRY TO TAKE ADVANTAGE OF PATTERNS\n");
         printf("IN YOUR GUESSING.\n\n");
         printf("GAME ENDS AFTER %d TURNS; A SCORE OF ", B1);

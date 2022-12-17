@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN apt install -y vim build-essential && apt update  
+RUN apt update && apt-get install -y vim build-essential
 WORKDIR /app
-ADD https://pastebin.com/raw/2P2tHUYD .
-RUN mkdir eroge
+ADD https://raw.githubusercontent.com/vlkv88/flip-port-basic-to-c/main/flip.c .
+CMD gcc -c flip.c
