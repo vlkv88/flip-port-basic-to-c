@@ -6,7 +6,7 @@
 // RANDOM
 float rnd(float max)
 {
-    //srand(time(NULL));
+    // srand(time(NULL));
     return (float)rand() / ((float)RAND_MAX);
 }
 
