@@ -1,9 +1,14 @@
-project:
-	gcc -std=c99 -Wall -Wpedantic -o flip flip.c
-	./flip
+project : flip.o flip.c
+	gcc flip.o -o flip
+	./a.exe
 
-installemscript:
+project : flip.c
+	gcc -c flip.c -o flip.o
+
+installemsdk: 
 	cd .. && git clone https://github.com/emscripten-core/emsdk.git
-	cd ../emsdk && emsdk install latest && emsdk active latest && emsdk_env.bat && emcc flip.c -o flip.html
+	cd ../emsdk && emsdk install latest && emsdk activate latest && emsdk_env.bat && emcc flip.c -o flip.html
+	npm i http-server -g
+	
 runserver:
-	cd ../emsdk && http-server
+	  http-server
